@@ -5,6 +5,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: #e8e9f3;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.clmn{
+    flex-direction: column;
+}
 .grid-container{
     display: grid;
     width: 100vw;
@@ -19,7 +36,8 @@ sidebar{
     grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
     background-color: #96c5f7;
     font-size: 1.35rem;
-    
+    position: relative;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 sidebar img{
@@ -43,7 +61,63 @@ sidebar ul {
 nav {
     grid-area: 1 / 2 / 2 / 5;
     background-color: #ffffff;
-   
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 100%;
+}
+
+.nav-row-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+    height: 40%;
+}
+
+.searchbox{
+    width: 70%;
+    height: 30%;
+}
+.searchbox > input {
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e8e9f3;
+}
+.searchbox > img {
+    max-width: 20px;
+}
+
+.profilebox{
+    width: 30%;
+}
+
+.profilebox > img {
+    max-width: 20px;
+}
+
+.nav-row-2{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    height: 40%;
+}
+
+.nav-row-2 > div {
+    margin: 20px;
+}
+
+.nav-buttons > button{
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+    font-family:monospace;
+    font-weight: 800;
+    font-size: 12px;
+    background-color: #96c5f7;
 }
 
 .main-content{
@@ -52,7 +126,8 @@ nav {
     grid-template-columns: repeat(3, minmax(150px, 1fr));
     grid-template-rows: repeat(3, minmax(150px, 1fr));
     gap: 5px;
-    background-color: #f2f4ff;
+    background-color: #e8e9f3;
+    margin: 10px;
 }
 
 .project1{
@@ -91,7 +166,19 @@ nav {
     overflow-x:hidden;
 }
 
+.title > img {
+    margin-top:5px;
+}
+
 a{text-decoration: none;}
 a:visited {text-decoration: none; color: black;}
 a:hover { text-decoration: none; color:rgb(39, 39, 39);}
-a:focus { text-decoration: none; color:orange;}
+a:focus { text-decoration: none; color:white;}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
